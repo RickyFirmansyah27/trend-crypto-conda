@@ -1,0 +1,13 @@
+jcopml                                    
+matplotlib                            
+numpy                 
+openpyxl                           
+pandas                             
+Pillow                                       
+plotly                                
+PyYAML                                 
+scikit-learn                            
+seaborn                                     
+sklearn                            
+streamlit                      
+yfinance 
