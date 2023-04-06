@@ -12,15 +12,18 @@ enableCORS=false\n\
 port = $PORT\n\
 " > ~/.streamlit/config.toml
 
-# create and activate environment
-echo "Creating and activating environment"
-conda create --name crypto python=3.7 jcopml matplotlib numpy openpyxl pandas Pillow plotly PyYAML scikit-learn seaborn sklearn streamlit yfinance -c conda-forge
+# create a new conda environment
+conda create --name crypto python=3.7 -y
+
+# activate the conda environment
 conda activate crypto
 
-# update TA-Lib
-echo "Updating TA-Lib"
-conda install -y -c conda-forge ta-lib
+# install TA-Lib library
+conda install -c conda-forge ta-lib -y
 
-# run streamlit app
-echo "Running streamlit app"
+# install dependencies from requirements.txt
+pip install -r requirements.txt
+
+# start the application
 streamlit run main.py
+
