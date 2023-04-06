@@ -1,18 +1,6 @@
 name: crypto
 channels:
-  - defaults
+  - conda-forge
 dependencies:
   - python=3.7
-  - jcopml                                    
-  - matplotlib                            
-  - numpy                 
-  - openpyxl                           
-  - pandas                             
-  - Pillow                                       
-  - plotly                                
-  - PyYAML                                 
-  - scikit-learn                            
-  - seaborn                                     
-  - sklearn                            
-  - streamlit                      
-  - yfinance 
+  - TA-lib
