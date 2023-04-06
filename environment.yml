@@ -1,5 +1,0 @@
-name: crypto
-channels:
-  - conda-forge
-dependencies:
-  - python=3.7
