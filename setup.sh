@@ -12,18 +12,15 @@ enableCORS=false\n\
 port = $PORT\n\
 " > ~/.streamlit/config.toml
 
-# create a new conda environment
-conda create --name crypto python=3.7 -y
+#!/bin/bash
 
-# activate the conda environment
-conda activate crypto
+# Install TA-Lib
+conda activate base
+conda install -y -c conda-forge ta-lib
 
-# install TA-Lib library
-conda install -c conda-forge ta-lib -y
-
-# install dependencies from requirements.txt
+# Install other libraries using pip
 pip install -r requirements.txt
 
-# start the application
+# Run the application
 streamlit run main.py
 
